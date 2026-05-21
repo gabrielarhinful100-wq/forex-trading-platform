@@ -1,0 +1,22 @@
+{
+  "name": "forex-trading-platform",
+  "version": "1.0.0",
+  "description": "Premium Forex Trading Platform with Modern FinTech UI",
+  "private": true,
+  "workspaces": [
+    "packages/frontend",
+    "packages/backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"yarn workspace @forex/frontend dev\" \"yarn workspace @forex/backend dev\"",
+    "build": "yarn workspace @forex/frontend build && yarn workspace @forex/backend build",
+    "start": "concurrently \"yarn workspace @forex/frontend start\" \"yarn workspace @forex/backend start\"",
+    "backend:dev": "yarn workspace @forex/backend dev",
+    "backend:build": "yarn workspace @forex/backend build",
+    "frontend:dev": "yarn workspace @forex/frontend dev",
+    "frontend:build": "yarn workspace @forex/frontend build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
