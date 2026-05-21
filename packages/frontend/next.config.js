@@ -1,0 +1,1 @@
+const nextConfig = {\n  reactStrictMode: true,\n  images: {\n    domains: ['localhost', 'api.example.com'],\n  },\n};\n\nmodule.exports = nextConfig;
